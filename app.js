@@ -29,4 +29,5 @@ google.addEventListener('click', () => {
   toggle.classList.remove('duck');
   gimg.classList.remove('hidden');
   dimg.classList.add('hidden');
+  form.action = 'https://www.google.com/search';
 });
