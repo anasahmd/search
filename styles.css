@@ -32,7 +32,7 @@ form {
 
 #Search::-webkit-search-cancel-button {
   position: relative;
-  right: 5px;
+  right: 15px;
 }
 
 input {
