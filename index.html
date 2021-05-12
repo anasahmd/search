@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <title>Search Widget</title>
+</head>
+
+<body>
+
+    <div class="switcher">
+        <div class="toggle"></div>
+        <div class="g on"><img src="./images/google-icon.png" alt=""></div>
+        <div class="d"><img src="./images/duckduckgo-icon.png" alt=""></div>
+    </div>
+
+    <div class="image">
+        <img class="duckduckgo hidden" src="./images/duckduckgo.png" alt="">
+        <img class="google" src="./images/google.png" alt="">
+    </div>
+
+    <form id="form" action="https://www.google.com/search">
+        <input focus disabled id="q" type="search" name="q" placeholder="Search">
+        <div class="button"><i class="fa fa-search"></i></div>
+    </form>
+    <script src="./app.js"></script>
+</body>
+
+</html>

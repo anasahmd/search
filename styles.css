@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #222;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #9aa0a6;
+  height: 3em;
+  max-width: 600px;
+  border-radius: 3.5em;
+  padding: 0.3em 1em;
+  align-items: center;
+  background-color: #fff;
+}
+
+#Search::-webkit-search-cancel-button {
+  position: relative;
+  right: 5px;
+}
+
+input {
+  border: 0;
+  width: 0;
+  max-width: 0;
+  font-size: 1.125rem;
+  transition: all 0.5s ease-in;
+  color: #222;
+}
+
+.image img {
+  width: 250px;
+  margin-bottom: 3em;
+}
+
+.image {
+  height: 125px;
+}
+
+input:focus {
+  outline: none;
+}
+
+input.active {
+  width: 75vw;
+  max-width: 600px;
+}
+
+.button {
+  color: #9aa0a6;
+  cursor: pointer;
+  position: abolute;
+}
+
+i {
+  font-size: 1.125rem;
+  width: auto;
+  height: auto;
+}
+
+.switcher {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  top: 2em;
+  right: 1.5em;
+  justify-content: space-between;
+  border: 2px solid #e8e8e8;
+  border-radius: 3em;
+  cursor: pointer;
+  width: 5.5em;
+  height: 2.5em;
+  transition: all 0.4s ease-in-out;
+}
+
+.switcher img {
+  width: 25px;
+  margin: 0.25em 0.5em;
+}
+
+.toggle {
+  width: 2.7em;
+  height: 2.5em;
+  border: 2px solid #e8e8e8;
+  border-radius: 3em;
+  position: fixed;
+  transition: all 0.4s ease-in-out;
+}
+
+.toggle.duck {
+  transform: translateX(100%);
+}
+
+.hidden {
+  display: none;
+}
